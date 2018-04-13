@@ -6,9 +6,9 @@ BRANDS = []
 
   def initialize(brand)
     @brand = brand
-    BRANDS.each do |brand|
-      if brand == brand
-        BRANDS.delete(brand)
+    BRANDS.each do |x|
+      if brand == x
+        BRANDS.delete(x)
       end
     end
     BRANDS << brand
