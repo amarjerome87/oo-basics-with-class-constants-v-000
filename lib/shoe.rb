@@ -6,12 +6,13 @@ BRANDS = []
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-    BRANDS.collect do |brand|
+    BRANDS.each do |brand|
       if brand == brand
         BRANDS.delete(brand)
       end
-    end 
+    end
+    BRANDS << brand
+
   end
 
   def cobble
